@@ -1,0 +1,25 @@
+//3.1: blink an LED with Pushbutton using Arduino.
+int pushbutton=2;
+int LED=10;
+void setup()
+{
+  pinMode(pushbutton,INPUT);
+  pinMode(LED,OUTPUT);
+}
+void loop()
+{
+  int btnstate=digitalRead(pushbutton);
+  if(btnstate==HIGH)
+  {
+    digitalWrite(LED,HIGH);
+    delay(1000);
+    digitalWrite(LED,LOW);
+	delay(1000);
+  }
+  else
+  {
+  	digitalWrite(LED,LOW);
+  }
+}
+
+    

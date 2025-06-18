@@ -1,0 +1,24 @@
+//1.9 - Write a program to print numbers in reverse order. 
+
+int a=1234;
+int ans;
+int rev=0;
+void setup()
+{
+  Serial.begin(9600);
+  int temp=a;
+  while(temp>0)
+{
+   ans=temp%10;
+   rev=rev*10+ans;
+   temp=temp/10;
+ }
+   Serial.println("Reverse :-- ");
+  Serial.println(rev);
+}
+ void loop()
+ {
+
+ }
+-------------------------------------------------
+4321

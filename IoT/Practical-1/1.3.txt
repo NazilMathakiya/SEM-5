@@ -1,0 +1,33 @@
+// 1.3 Write a program to perform an Arithmetic operation.
+//
+
+int a = 10;
+int b = 10;
+
+void setup()
+{
+  Serial.begin(9600);  
+  Serial.println("Addition is :: ");
+  Serial.println(a + b);
+  Serial.println("Subtraction is :: ");
+  Serial.println(a - b);
+  Serial.println("Multiplication is :: ");
+  Serial.println(a * b);
+  Serial.println("Division is :: ");
+  Serial.println(a / b);
+}
+
+void loop()
+{
+  // Empty loop
+}
+
+------------------------------------------
+Addition is :: 
+20
+Subtraction is :: 
+0
+Multiplication is :: 
+100
+Division is :: 
+1

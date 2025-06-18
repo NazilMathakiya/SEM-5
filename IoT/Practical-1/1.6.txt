@@ -1,0 +1,32 @@
+//1.6 - WAP to find max number from 3 number.
+
+
+void setup()
+{
+  int a=10;
+  int b=20;
+  int c=05;
+  
+  Serial.begin(9600);
+  
+  if(a>b && a>c)
+  {
+	Serial.println("A is Maximum number.");
+  }
+  else if(b>a && b>c)
+  {
+    Serial.println("B is Maximum number.");
+  }
+  else
+  {
+    Serial.println("c is Maximum number.");
+  }
+}
+
+void loop()
+{
+  //empty loop
+}
+
+-----------------------------------------------------------------
+//B is Maximum number.

@@ -1,0 +1,25 @@
+// 4. Write a program to find a number that is odd or even.
+//
+int a=10;
+
+void setup()
+{
+  Serial.begin(9600);
+  if(a%2==0)
+  {
+    Serial.println("Number is Even");
+  }
+  else
+  {
+    Serial.println("Number is Odd");
+  }
+}
+
+void loop()
+{
+  // The loop function is typically used for continuous tasks.
+  // In this specific code, nothing is continuously executed here.
+}
+
+--------------------------------------------------------
+Number is Even

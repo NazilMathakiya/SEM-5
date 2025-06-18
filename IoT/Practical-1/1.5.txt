@@ -1,0 +1,25 @@
+//5. Write a program to find the maximum number from 2 numbers. 
+
+
+void setup()
+{
+  int a=10;
+  int b=20;
+  
+  Serial.begin(9600);
+  
+  if(a>b)
+  {
+	Serial.println("A is Maximum number.");
+  }
+  else
+  {
+    Serial.println("B is Maximum number.");
+  }
+}
+
+void loop()
+{
+  //empty loop
+}
+//B is Maximum number.

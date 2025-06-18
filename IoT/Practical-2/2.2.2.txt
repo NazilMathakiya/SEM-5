@@ -1,0 +1,14 @@
+//prac 2
+//2.1: use of basic electrical concept
+//2.2: create series and parallel connections to calculate reading of register
+float r1=100;
+float r2=120;
+void setup()
+{
+  Serial.begin(9600);
+  float total=((1/r1)+(1/r2));
+  Serial.print(total);
+}
+void loop()
+{
+}

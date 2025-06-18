@@ -1,0 +1,32 @@
+  //1.8 -  Write a program to sum of digits.
+
+void setup()
+{
+  
+ Serial.begin(9600);
+  int number = 12345;
+  int sum = 0;
+  int temp = number;
+  
+  while(temp > 0)
+  {
+    sum +=  temp % 10  ;
+    temp = temp / 10;
+  }
+   Serial.println("Number is :: ");
+   Serial.println(number);
+  Serial.println("Sum is ::");
+   Serial.println(sum);
+ }    
+
+void loop()
+{
+ //empty loop
+ 	
+}
+
+-------------------------------------------------------------
+Number is :: 
+12345
+Sum is ::
+15

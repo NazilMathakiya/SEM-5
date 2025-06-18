@@ -1,0 +1,43 @@
+2. Create a first program using Arduino IDE with Hardware Interface and without hardware 
+interface. 
+
+//1. Arduino Program With Hardware Interface
+
+void setup() 
+{
+  pinMode(13, OUTPUT); // Set pin 13 as output
+}
+
+void loop() 
+{
+  digitalWrite(13, HIGH); // Turn LED on
+  delay(1000);            // Wait 1 second
+  digitalWrite(13, LOW);  // Turn LED off
+  delay(1000);            // Wait 1 second
+}
+
+
+//Output:
+//LED blinks every 1 second
+----------------------------------------------------------------------------------------------
+
+//2. Arduino Program Without Hardware Interface
+
+void setup() 
+{
+  Serial.begin(9600); // Start serial communication at 9600 baud rate
+}
+
+void loop() 
+{
+  Serial.println("Hello from Arduino!");
+  delay(1000); // Wait 1 second
+}
+
+
+// Output:
+Every second, you'll see this message on Serial Monitor:
+
+Hello from Arduino!
+Hello from Arduino!
+Hello from Arduino!

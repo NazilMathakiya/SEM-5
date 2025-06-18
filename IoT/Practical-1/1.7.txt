@@ -1,0 +1,36 @@
+//1.7 -Write a program to print 1 to 10. 
+
+
+
+void setup()
+{
+  Serial.begin(9600);
+  int a=1;
+  int i=1;
+  for(i=1;i<=10;i++)
+  {
+    
+    Serial.println(i);
+  }  
+}
+
+void loop()
+{
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+
+--------------------------------------------------------------- 
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10

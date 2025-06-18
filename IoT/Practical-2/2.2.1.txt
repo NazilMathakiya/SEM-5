@@ -1,0 +1,11 @@
+int r1=10;
+int r2=20;
+void setup()
+{
+  Serial.begin(9600);
+  int total=r1+r2;
+  Serial.println(total);
+}
+void loop()
+{
+}

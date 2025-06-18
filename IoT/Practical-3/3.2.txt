@@ -1,0 +1,24 @@
+// blink an 2 LED using switch.
+int LED1=2;
+int LED2=12;
+int Switch=5;
+void setup()
+{
+  pinMode(LED1,OUTPUT);
+  pinMode(LED2,OUTPUT);
+  pinMode(Switch,INPUT);
+}
+void loop()
+{
+  int state=digitalRead(Switch);
+  if(state==HIGH)
+  {
+    digitalWrite(LED1,HIGH);
+    digitalWrite(LED2,HIGH);
+  }
+  else
+  {
+    digitalWrite(LED1,LOW);
+    digitalWrite(LED2,LOW);
+  }
+}
