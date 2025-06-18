@@ -1,0 +1,94 @@
+﻿// 1.5 - W.A.P. to perform Addition, Subtraction, Multiplication, Division based on user choice using if, if..else..if, & switch. (A)
+
+import 'dart:io';
+void main() {
+print("Enter value of a :: ");
+int a = int.parse(stdin.readLineSync()!);
+print("enter value of b :: ");
+int b = int.parse(stdin.readLineSync()!);
+print("1 for addition");
+print("2 for subtraction");
+print("3 for multiplication");
+print("4 for division");
+print("enter choice");
+int choice = int.parse(stdin.readLineSync()!);
+
+// Using if-else-if
+if (choice == 1) {
+print("(Using if-else-if) Addition is :: ");
+print(a + b);
+} else if (choice == 2) {
+print("(Using if-else-if) Subtraction is :: ");
+print(a - b);
+} else if (choice == 3) {
+print("(Using if-else-if) Multiplication is :: ");
+print(a * b);
+} else if (choice == 4) {
+if (b != 0) {
+print("(Using if-else-if) Division is :: ");
+print(a / b);
+} else {
+print("Cannot divide by zero.");
+}
+} else {
+print("Invalid choice.");
+}
+
+// Using switch case
+switch (choice) {
+case 1:
+print("(Using switch case) Addition is :: ");
+print(a + b);
+break;
+case 2:
+print("(Using switch case) Subtraction is :: ");
+print(a - b);
+break;
+case 3:
+print("(Using switch case) Multiplication is :: ");
+print(a * b);
+break;
+case 4:
+if (b != 0) {
+print("(Using switch case) Division is :: ");
+print(a / b);
+} else {
+print("Cannot divide by zero.");
+}
+break;
+default:
+print("Invalid choice.");
+}
+}
+
+//E:/flutter/bin/cache/dart-sdk/bin/dart.exe --enable-asserts --no-serve-devtools E:\bhavin\labs\lib\bhavin_218\lab_01\program_05.dart
+// Enter value of a ::
+// 12
+// enter value of b ::
+// 4
+// 1 for addition
+// 2 for subtraction
+// 3 for multiplication
+// 4 for division
+// enter choice
+// 3
+// (Using if-else-if) Multiplication is ::
+// 48
+// (Using switch case) Multiplication is ::
+// 48
+// -------------------------------------------------------------------------------------------------------------
+// Division by Zero
+// Enter value of a ::
+// 10
+// enter value of b ::
+// 0
+// 1 for addition
+// 2 for subtraction
+// 3 for multiplication
+// 4 for division
+// enter choice
+// 4
+// (Using if-else-if) Division is ::
+// Cannot divide by zero.
+// (Using switch case) Division is ::
+// Cannot divide by zero.

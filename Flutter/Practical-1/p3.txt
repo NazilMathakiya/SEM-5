@@ -1,0 +1,29 @@
+﻿// 1.3 -  Body Mass Index (BMI) is measure of health on weight. It can be calculated by taking your weight in kilograms and dividing
+// by square of your height in meters. Write a program that prompts the user to enter weight in pounds and height in inches
+// and display the BMI. Note: 1 pound=.45359237 Kg and 1 inch=0.254 meters. (A)
+
+import 'dart:io';
+void main()
+{
+var height,weight,newheight,newweight;
+
+print("Enter weight in pound :: ");
+weight = double.parse(stdin.readLineSync()!);
+
+
+print("Enter height in inces :: ");
+height = double.parse(stdin.readLineSync()!);
+
+newheight = .0254*height;
+newweight = .45359237*weight;
+
+double bmi =newweight /(newheight * newheight);
+print("BMI is : $bmi");
+}
+
+//E:/flutter/bin/cache/dart-sdk/bin/dart.exe --enable-asserts --no-serve-devtools E:\bhavin\labs\lib\bhavin_218\lab_01\program_03.dart
+// Enter weight in pound ::
+// 92.5942
+// Enter height in inces ::
+// 62
+// BMI is : 0.1693552686551099

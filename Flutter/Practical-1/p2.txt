@@ -1,0 +1,23 @@
+﻿// 1.2 - W.A.P. to find percentage of 5 subject. (A)
+import 'dart:io';
+void main()
+{
+var a,b,c,d,e,sum,per;
+a = int.parse(stdin.readLineSync()!);
+b = int.parse(stdin.readLineSync()!);
+c = int.parse(stdin.readLineSync()!);
+d = int.parse(stdin.readLineSync()!);
+e = int.parse(stdin.readLineSync()!);
+
+sum = a+b+c+d+e ;
+per = (sum/500)*100;
+print('percentage: $per');1
+
+}
+//E:/flutter/bin/cache/dart-sdk/bin/dart.exe --enable-asserts --no-serve-devtools E:\bhavin\labs\lib\bhavin_218\lab_01\program_02.dart
+// 10
+// 20
+// 30
+// 40
+// 50
+// percentage: 30.0

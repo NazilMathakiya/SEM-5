@@ -1,0 +1,24 @@
+﻿// 1.4 - W.A.P. to check whether the given number is positive or negative. (A)
+
+import 'dart:io';
+void main()
+{
+var a;
+
+a=int.parse(stdin.readLineSync("Enter value of a :: ")!);
+if(a>0)
+{
+print("$a is positive Number. ");
+}
+else if(a==0)
+{
+print("$a is ZERO Number.");
+}
+else
+{
+print("$a is Nagative Number. ");
+}
+}
+//E:/flutter/bin/cache/dart-sdk/bin/dart.exe --enable-asserts --no-serve-devtools E:\bhavin\labs\lib\bhavin_218\lab_01\program_04.dart
+// Enter value of a :: 10
+// 10 is positive
