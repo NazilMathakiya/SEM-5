@@ -1,0 +1,24 @@
+// 4.3 Perform A traffic light signal with Red Yellow and Green LEDs
+//
+void setup()
+{
+  pinMode(12, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(2, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(12, HIGH);
+  delay(3000); // Wait for 1000 millisecond(s)
+  digitalWrite(12, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(7, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(7, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, HIGH);
+  delay(2000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
