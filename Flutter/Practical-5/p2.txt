@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+class Demo6 extends StatelessWidget {
+  const Demo6({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    TextEditingController _ctr= TextEditingController();
+
+    return Scaffold(
+      body: Column(
+        children: [
+          TextField(controller: _ctr),
+          ElevatedButton(onPressed: () {
+            print(_ctr.text);
+          }, child: Text("Submit"))
+        ],
+      ),
+    );
+  }
+}
