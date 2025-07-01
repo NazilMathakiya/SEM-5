@@ -1,0 +1,15 @@
+//5.1) control a LED brightness with a potentiometer using Arduino.
+int LED=5;
+int pot=A0;
+int potvalue=0;
+void setup()
+{
+  pinMode(LED,OUTPUT);
+  pinMode(pot,INPUT);
+}
+void loop()
+{
+  potvalue=analogRead(pot);
+  int brightness= map(potvalue,0,1023,0,255);
+  analogWrite(LED,brightness);
+}-
