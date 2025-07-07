@@ -1,0 +1,23 @@
+//6.1fading led using arduino.
+int led=3;
+int bright=0;
+void setup()
+{
+  pinMode(led, OUTPUT);
+}
+
+void loop()
+{
+  for(bright=0;bright<=255;bright+=30);
+  {
+    analogWrite(led,bright);
+    delay(1000);
+  }
+  for(bright=255;bright>=0;bright-=30);
+  {
+    analogWrite(led,bright);
+    delay(1000);
+  }
+  
+
+}
