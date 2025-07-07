@@ -1,0 +1,29 @@
+// C++ code
+//fading multiple led using arduino.
+int led1=5;
+int led2=6;
+int bright=0;
+void setup()
+{
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+}
+
+void loop()
+{
+  for(bright=0;bright<=255;bright+=30)
+  {
+    analogWrite(led1,bright);
+    analogWrite(led2,bright);
+    delay(1000);
+  }
+  for(bright=255;bright>=0;bright-=30)
+  {
+    analogWrite(led1,bright);
+    analogWrite(led2,bright);
+    delay(1000);
+  }
+  
+  
+
+}
