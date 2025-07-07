@@ -1,0 +1,28 @@
+// C++ code
+//blink an fade led using Potentimeter and arduino.
+int led=10;
+int pot=A1;
+int potvalue;
+int bright=0;
+
+void setup()
+{
+  pinMode(pot,INPUT);
+  pinMode(led,OUTPUT);
+}
+
+void loop()
+{
+  potvalue=analogRead(pot);
+  for(bright=0;bright<=255;bright+=30)
+  {
+    analogWrite(led,bright);
+    delay(1000);
+  }
+   for(bright=255;bright>=0;bright-=30)
+  {
+    analogWrite(led,bright);
+    delay(1000);
+  }
+  
+}
