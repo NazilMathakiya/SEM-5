@@ -1,0 +1,24 @@
+//7.2 control an LED with PIR sensor using Arduino.
+int LED=10;
+int PIR=5;
+void setup()
+{
+  pinMode(LED,OUTPUT);
+  pinMode(PIR,INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int motion=digitalRead(PIR);
+  Serial.println(motion);
+  if(motion==HIGH)
+  {
+    digitalWrite(LED,HIGH);
+  }
+  else
+  {
+    digitalWrite(LED,LOW);
+  }
+  
+}
