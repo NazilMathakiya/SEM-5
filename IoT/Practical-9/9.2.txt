@@ -1,0 +1,14 @@
+//9.2 measure soil moisture using Arduino uno on the serial monitor.
+int moisture=A0;
+void setup()
+{
+  pinMode(moisture, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int value=analogRead(moisture);
+  Serial.println(value);
+  delay(1000);
+}
