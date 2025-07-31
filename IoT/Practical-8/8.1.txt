@@ -1,0 +1,15 @@
+//8.1 play an alarm with piezo buzzer using arduino.
+int buzz=8;
+void setup()
+{
+  pinMode(buzz, OUTPUT);
+}
+
+void loop()
+{
+  tone(buzz,1500);
+  delay(1000);
+  noTone(buzz);
+  delay(1000);
+  
+}
