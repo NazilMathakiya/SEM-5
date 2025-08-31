@@ -1,0 +1,16 @@
+//11.1 practice the servo motor interfacing using arduino.
+#include<Servo.h>
+Servo myservo;
+int smotor=6;
+void setup()
+{
+  myservo.attach(smotor);
+}
+
+void loop()
+{
+  myservo.write(90);
+  delay(1000); 
+  myservo.write(180);
+  delay(1000);
+}

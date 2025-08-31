@@ -1,0 +1,15 @@
+//11.2 practice the stepper motor interfacing using arduino.
+#include<Stepper.h>
+Stepper mystep(2048,10,11,8,9);
+void setup()
+{
+  mystep.setSpeed(10);
+}
+
+void loop()
+{
+  mystep.step(180);
+  delay(1000); // Wait for 1000 millisecond(s)
+  mystep.step(-80);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
